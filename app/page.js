@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 import Frequently from "./components/Important/Frequently.jsx";
 import FoundersNote from "./components/Extras/FoundersNote";
 import HeroSection from "./components/Important/HeroSection";
+import Showcase from "./components/Info/Showcase.jsx";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <FeaturedSection2 />
       <FeaturedSection3 />
       <Features />
+      <Showcase />
       <SinglePricingTable />
       <FoundersNote />
       <Frequently />

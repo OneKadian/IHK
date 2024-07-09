@@ -71,14 +71,13 @@ export default function SinglePricingTable() {
           <h2 className="text-3xl font-bold text-center tracking-tight text-gray-300 sm:text-4xl">
             {pricingData.title}
           </h2>
-          <div className="mt-6 flex justify-center">
-            <label className="inline-flex items-center cursor-pointer">
-              <input type="checkbox" value="" className="sr-only peer" />
-              <span className="m-3 text-sm font-medium text-gray-300">
+          <div className="mt-6 flex justify-center items-center">
+            <label className="flex justify-center items-center cursor-pointer w-full max-w-xs sm:max-w-none sm:inline-flex">
+              <span className="text-sm font-medium text-gray-300 text-center sm:text-left sm:w-auto sm:flex-none">
                 {pricingData.toggle.monthly}
               </span>
               <Switch
-                className="text-white"
+                className="text-white mx-3"
                 checked={isYearly}
                 onChange={toggleBilling}
                 sx={{
@@ -87,7 +86,7 @@ export default function SinglePricingTable() {
                   },
                 }}
               />
-              <span className="m-3 text-sm font-medium text-gray-300">
+              <span className="text-sm font-medium text-gray-300 text-center sm:text-right sm:w-auto sm:flex-none">
                 {pricingData.toggle.annual}
               </span>
             </label>
