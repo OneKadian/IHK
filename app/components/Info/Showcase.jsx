@@ -1,30 +1,33 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import components from "../../Images/components.png";
+import components from "../../Images/space3DPNG (1).png";
+import space from "../../Images/space3DPNG (1).png";
+import light from "../../Images/nutriLightPNG (1).png";
+import dark from "../../Images/nutriDarkPNG (1).png";
 
 const Showcase = () => {
   const projectAchievements = [
     {
-      imageSrc: components,
+      imageSrc: space,
       imageAlt: "Project Achievements of Sketch",
       title: "3D Space",
       description: "Content Design, Marketing",
-      link: "https://onekadian.com",
+      link: "https://spaced-nine.vercel.app/",
     },
     {
-      imageSrc: components,
+      imageSrc: light,
       imageAlt: "Project Achievements of Figma",
       title: "Lighter",
       description: "User Interface Design",
-      link: "https://amazom.com",
+      link: "https://nutri-light.vercel.app/",
     },
     {
-      imageSrc: components,
+      imageSrc: dark,
       imageAlt: "Project Achievements of Frame.io",
       title: "Darker",
       description: "User Interface Design",
-      link: "https://amazon.com",
+      link: "https://nutri-dark.vercel.app/",
     },
   ];
 
@@ -41,7 +44,7 @@ const Showcase = () => {
                 key={index}
                 className="flex items-center flex-col gap-8 w-full group"
               >
-                <div className="block cursor-pointer">
+                <div className="block cursor-pointer rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden">
                   <Image src={project.imageSrc} alt={project.imageAlt} />
                 </div>
                 <div className="flex items-center justify-between max-w-[406px] lg:max-w-full w-full lg:px-0">

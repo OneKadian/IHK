@@ -64,6 +64,7 @@ export default function FeaturedSection2() {
               autoPlay
               loop
               muted
+              preload="auto"
               className="w-full h-full"
             >
               Your browser does not support the video tag.
