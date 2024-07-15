@@ -8,6 +8,7 @@ import Frequently from "./components/Important/Frequently.jsx";
 import FoundersNote from "./components/Extras/FoundersNote";
 import HeroSection from "./components/Important/HeroSection";
 import Showcase from "./components/Info/Showcase.jsx";
+import ModalExample from "./components/Extras/Modal.jsx";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <FeaturedSection />
       <FeaturedSection2 />
       <FeaturedSection3 />
+      <ModalExample />
       <Features />
       <Showcase />
       <SinglePricingTable />
