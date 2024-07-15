@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
         <SingleTestimonial />
         <div className="mx-auto max-w-4xl pb-10 text-center md:pb-16">
-          <h1 className="leading-tighter font-heading mb-6 text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl">
+          <h1 className="text-gray-200 mb-6 text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl">
             {openingCopy.titleText}
           </h1>
           <div className="mx-auto max-w-3xl">
