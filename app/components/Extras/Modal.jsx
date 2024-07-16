@@ -6,15 +6,15 @@ const ModalExample = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const modalText = {
-    header: "Focus on the important stuff",
+    header: "Speed of ⚡> Speed of 🔊",
     body: [
-      "From figuring out the codebase to tackling unexpected challenges, the journey can be overwhelming and filled with headaches.",
-      "You have two options: spend countless hours trying to piece everything together on your own, or you can hire me, the creator of this boilerplate, to build your SaaS for you",
-      "I offer a comprehensive service where I not only develop your SaaS but also help you find users, set everything up, and start generating Monthly Recurring Revenue (MRR) quickly and efficiently.",
+      "I am not sure if this is for you but the journey of developing a SaaS and finding users is full of challenges and headaches.",
+      "As I see it, You have three options - Sleep on your million-dollar idea, figure out everything on your own or get the creator of this boilerplate to help you",
+      "If I could not only develop your SaaS but also help you find users, how would you feel?",
     ],
     footer: {
-      accept: "Lets get it done",
-      decline: "No, I'll figure it out",
+      accept: "Feels Good!",
+      decline: "I hate Good stuff",
     },
   };
 

@@ -17,7 +17,7 @@ const HeroSection = () => {
 
   return (
     <section id="heroOne" className="bg-gray-900">
-      <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6">
+      <div className="mx-auto max-w-7xl px-4 py-8 lg:py-24">
         <SingleTestimonial />
         <div className="mx-auto max-w-4xl pb-10 text-center md:pb-16">
           <h1 className="text-gray-200 mb-6 text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl">
