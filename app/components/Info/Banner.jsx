@@ -28,15 +28,12 @@ export default function Banner() {
         />
       </div>
       <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 sm:justify-between w-full sm:w-auto">
-        <p className="text-sm leading-6 text-gray-900 sm:order-1 order-2">
-          <span className="sm:hidden">Want me to build your SaaS for you?</span>
-          <span className="hidden sm:block">
-            Want me to build your SaaS for you?
-          </span>
+        <p className="text-sm leading-6 text-gray-900 order-1">
+          Want me to build your SaaS for you?
         </p>
         <a
           href="#"
-          className="flex-none rounded-full hover:bg-black bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 sm:ml-2 sm:order-2 order-1"
+          className="flex-none rounded-full hover:bg-black bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 order-2"
         >
           <span aria-hidden="true">&rarr;</span>
         </a>
