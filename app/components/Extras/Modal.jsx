@@ -21,7 +21,7 @@ const ModalExample = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 10000); // 18 seconds
+    }, 15000); // 18 seconds
 
     return () => clearTimeout(timer); // Clean up the timer on component unmount
   }, []);

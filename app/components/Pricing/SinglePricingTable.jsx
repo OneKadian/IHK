@@ -144,7 +144,7 @@ export default function SinglePricingTable() {
                     `$${currentPlan.billing.price} ${currentPlan.billing.text}`}
                 </div> */}
                 <div className="flex justify-center mt-10">
-                  <script src="https://gumroad.com/js/gumroad.js"></script>
+                  {/* <script src="https://gumroad.com/js/gumroad.js"></script>
                   <a
                     class="gumroad-button"
                     href={
@@ -152,6 +152,19 @@ export default function SinglePricingTable() {
                         ? pricingData.plans.annual.button.link
                         : pricingData.plans.monthly.button.link
                     }
+                  >
+                    Buy on
+                  </a> */}
+
+                  <script src="https://gumroad.com/js/gumroad.js" def></script>
+                  <a
+                    class="gumroad-button"
+                    href={
+                      isYearly
+                        ? pricingData.plans.annual.button.link
+                        : pricingData.plans.monthly.button.link
+                    }
+                    data-gumroad-overlay-checkout="true"
                   >
                     Buy on
                   </a>
