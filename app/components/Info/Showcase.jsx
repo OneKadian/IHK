@@ -13,21 +13,21 @@ const Showcase = () => {
       imageAlt: "Project Achievements of Sketch",
       title: "3D Space",
       description: "Content Design, Marketing",
-      link: "https://spaced-nine.vercel.app/",
+      link: "https://spa-ce.vercel.app/",
     },
     {
       imageSrc: light,
       imageAlt: "Project Achievements of Figma",
       title: "Lighter",
       description: "User Interface Design",
-      link: "https://nutri-light.vercel.app/",
+      link: "https://light-er.vercel.app/",
     },
     {
       imageSrc: dark,
       imageAlt: "Project Achievements of Frame.io",
       title: "Darker",
       description: "User Interface Design",
-      link: "https://nutri-dark.vercel.app/",
+      link: "https://dark-er.vercel.app/",
     },
   ];
 
