@@ -1,4 +1,5 @@
 import Image from "next/image";
+import components from "../../Images/read.png";
 
 const featuredCopy = {
   featuredHeading: " A highly useful Google sheet? - rare but true!",
@@ -40,6 +41,7 @@ export default function FeaturedSection2() {
               loop
               muted
               preload="auto"
+              poster={components}
               className="w-full h-full"
             >
               Your browser does not support the video tag.

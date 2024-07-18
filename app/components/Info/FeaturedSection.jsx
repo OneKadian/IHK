@@ -1,3 +1,4 @@
+import components from "../../Images/components2.png";
 import Image from "next/image";
 
 const featuredCopy = {
@@ -29,6 +30,10 @@ const featuredCopy = {
 // ];
 
 export default function FeaturedSection() {
+  const videoUrl =
+    "https://osdblyvwidixouibqkrf.supabase.co/storage/v1/object/public/Badminton/CodeFiles.mp4";
+  const posterUrl = "/path/to/your/poster-image.jpg"; // Replace with your actual poster image URL
+
   return (
     <div className="overflow-hidden bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -60,11 +65,12 @@ export default function FeaturedSection() {
           </div>
           <div className="flex flex-1 overflow-hidden bg-[#1a1b26] justify-center rounded-xl shadow-xl ring-1 ring-gray-400/10 items-center h-[24rem] lg:h-auto">
             <video
-              src="https://osdblyvwidixouibqkrf.supabase.co/storage/v1/object/public/Badminton/CodeFiles.mp4"
+              src={videoUrl}
               autoPlay
               loop
               muted
               preload="auto"
+              poster={components}
               className="w-full h-full"
             >
               Your browser does not support the video tag.

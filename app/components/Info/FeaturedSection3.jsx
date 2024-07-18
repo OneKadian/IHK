@@ -1,4 +1,5 @@
 import Image from "next/image";
+import components from "../../Images/notionTemplate.png";
 
 const featuredCopy = {
   featuredHeading: "Closest you come to creating a second brain",
@@ -64,6 +65,7 @@ export default function FeaturedSection2() {
               autoPlay
               loop
               muted
+              poster={components}
               preload="auto"
               className="w-full h-full"
             >
