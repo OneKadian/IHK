@@ -1,8 +1,10 @@
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import components from "../../Images/read.png";
 
 const featuredCopy = {
-  featuredHeading: " A highly useful Google sheet? - rare but true!",
+  featuredHeading: "A highly useful Google sheet? - rare but true!",
   featuredDescription:
     "Curated list of tools and knowledge to save you search time, so you can focus on centering a <div> and changing button colors.",
 };
@@ -30,19 +32,44 @@ const featuredCopy = {
 // ];
 
 export default function FeaturedSection2() {
+  const videoUrl =
+    "https://osdblyvwidixouibqkrf.supabase.co/storage/v1/object/public/Badminton/resource.mp4";
+
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+    const handleMediaQueryChange = (event) => {
+      setIsLargeScreen(event.matches);
+    };
+
+    // Set initial state
+    handleMediaQueryChange(mediaQuery);
+
+    // Listen for media query changes
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Clean up the event listener
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <div className="overflow-hidden bg-gray-900 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="order-2 lg:order-1 flex overflow-hidden flex-1 justify-center rounded-xl bg-white shadow-xl ring-1 ring-gray-400/10 items-center h-[24rem] lg:h-auto">
             <video
-              src="https://osdblyvwidixouibqkrf.supabase.co/storage/v1/object/public/Badminton/resource.mp4"
-              autoPlay
+              src={videoUrl}
               loop
               muted
               preload="auto"
-              poster={components}
+              poster={components.src} // Use the poster attribute for the thumbnail
               className="w-full h-full"
+              controls={!isLargeScreen}
+              autoPlay={isLargeScreen}
             >
               Your browser does not support the video tag.
             </video>
