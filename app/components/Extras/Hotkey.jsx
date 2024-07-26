@@ -8,7 +8,7 @@ const Hotkey = () => {
     const handleKeyPress = (event) => {
       if (event.key === "1") {
         // Redirect to the Gumroad URL
-        window.location.href = "https://anirudhkadian1.gumroad.com/";
+        window.location.href = "https://anirudhkadian1.gumroad.com/l/vezcsg";
       }
     };
 

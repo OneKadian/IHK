@@ -15,7 +15,7 @@ const FooterItems = [
   },
   {
     name: "Work with me",
-    href: "https://www.kadianventures.com",
+    href: "https://cal.com/onekadian/30min",
   },
 ];
 

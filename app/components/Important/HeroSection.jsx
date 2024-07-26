@@ -29,7 +29,7 @@ const HeroSection = () => {
             </p>
             <div className="mt-10 mb-8  flex flex-col items-center justify-center gap-y-6 sm:flex-row sm:justify-center sm:gap-x-6">
               <Link
-                href="#"
+                href="https://anirudhkadian1.gumroad.com/l/vezcsg"
                 // className="w-[360px] sm:w-auto mx-2 rounded-md bg-blue-600
                 // px-3.5 py-2.5 text-base font-semibold text-white shadow-sm
                 // hover:bg-blue-800 focus-visible:outline

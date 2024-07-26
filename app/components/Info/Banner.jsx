@@ -32,7 +32,7 @@ export default function Banner() {
           Want me to build your SaaS for you?
         </p>
         <a
-          href="#"
+          href="https://cal.com/onekadian/30min"
           className="flex-none rounded-full hover:bg-black bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 order-2"
         >
           <span aria-hidden="true">&rarr;</span>
