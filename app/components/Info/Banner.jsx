@@ -1,8 +1,11 @@
 import { XMarkIcon } from "@heroicons/react/20/solid";
-
+import Link from "next/link";
 export default function Banner() {
   return (
-    <div className="sticky top-0 flex items-center justify-center overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 z-50">
+    <Link
+      href="https://cal.com/onekadian/30min"
+      className="sticky top-0 flex items-center justify-center overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 z-50 cursor-pointer"
+    >
       <div
         aria-hidden="true"
         className="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
@@ -31,13 +34,10 @@ export default function Banner() {
         <p className="text-sm leading-6 text-gray-900 order-1">
           Want me to build your SaaS for you?
         </p>
-        <a
-          href="https://cal.com/onekadian/30min"
-          className="flex-none rounded-full hover:bg-black bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 order-2"
-        >
+        <div className="flex-none rounded-full hover:bg-black bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 order-2">
           <span aria-hidden="true">&rarr;</span>
-        </a>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
